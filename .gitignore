@@ -1,0 +1,38 @@
+# Ignorar archivos y carpetas específicas de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.venv/
+*.egg-info/
+.tox/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Ignorar modelos entrenados (pueden ser grandes)
+# Si tus modelos entrenados son muy grandes y prefieres NO subirlos,
+# DESCOMENTA (quita el #) esta línea.
+# Si quieres subirlos (recomendado para este proyecto si no son gigantes), MANTÉNLA COMENTADA.
+# models/*.joblib
+# models/*.pkl
+
+# Ignorar datos raw si son muy grandes o sensibles
+# Si tus CSVs en 'data/' son muy grandes y prefieres NO subirlos,
+# DESCOMENTA esta línea.
+# Si quieres subirlos (recomendado para este proyecto si no son gigantes), MANTÉNLA COMENTADA.
+# data/
+
+# Ignorar archivos de entorno de Streamlit
+.streamlit/
+.vscode/ # Ignorar configuraciones de VS Code específicas de usuario
+
+# Archivos de sistema y logs
+.DS_Store
+Thumbs.db
+*.log
+*.temp
+*.tmp
